@@ -1,0 +1,22 @@
+Interfaces
+
+	// Porque hacer INTERFACES
+		// Tenemos un POJOS "Producto" tiene cliente .. etc
+		// Creamos una lista de cosas que quiero hacer con esa clase
+		// Que podiamos hacer con un objeto de tipo 'producto' , guardarlo en la base de dato
+		// leerlo de la bd , sobre un producto , cambiar el precio , eliminar de la bd , hacer CRUD
+		// obtener una lista de productos , de una tipo de productos de una misma familia
+		// Creamos una interfaces , el primer metodo crear , metodo getAll() devuelve una lista de product ,
+
+		// Creamos una interfaces                  |Clase que implementa los metodos
+		// ProductoServices productoServices = new ProductosServicesImpl();
+		
+		// 
+
+		// Interfaces que hace cosas con una BD relacional
+//		productoServices.getAll();
+//		productoServices.read(10002);
+//		productoServices.delete(23);
+		
+// WebServices con Interfaces - Se usa para hacer su implementación , cumplira el contrato 
+// Se usa para hacer implementaciones 
