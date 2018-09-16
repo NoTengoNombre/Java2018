@@ -9,22 +9,23 @@ import com.rvssoft.gestionproductos.backend.familia.Familia;
 import com.rvssoft.gestionproductos.backend.familia.Producto;
 
 /**
- * 
  * @see Carpeta de ejemplos
  * @since 10 sept. 2018 : 23:29:45
  * @author Android
- *
+ * 
+ *         BASE DE DATOS
  */
 public class DummyDB {
 
 	/**
+	 * Map 'Interfaces' - HashMap 'Clase'
+	 * 
 	 * CONSTANTE "Interface" Map : STATIC 'solo una copia'
 	 * 
-	 * SIN ORDEN en la Inserccion 'HashMap'
+	 * SIN ORDEN en la Inserccion por la implementacion de 'HashMap'
 	 * 
-	 * Map 'Interfaces' - HashMap 'Clase'
 	 */
-	private static final Map<Integer, Producto> MAPA_PRODUCTOS = new HashMap<>();
+	private static final Map<Integer, Producto> MAPA_PRODUCTOS = new HashMap<Integer, Producto>();
 
 	/**
 	 * Codigo para crear las fechas
@@ -55,14 +56,14 @@ public class DummyDB {
 			e.printStackTrace();
 		}
 
-		// 'objetos' Producto
+		// Instancias 'objetos' de la clase Producto
 		Producto p1 = new Producto(3544, "ContaNerd", Familia.SOFTWARE, fecha1, 120.34);
 		Producto p2 = new Producto(1923, "LaserJet 2P", Familia.HARDWARE, fecha2, 450.34);
 		Producto p3 = new Producto(2566, "ContaNerd Deluxe", Familia.SOFTWARE, fecha3, 570.60);
 		Producto p4 = new Producto(9835, "Alfombrilla Doramon", Familia.CONSUMIBLE, fecha4, 15.20);
 		Producto p5 = new Producto(1003, "Alfombrilla F.C Barcelona", Familia.CONSUMIBLE, fecha5, 15.20);
 
-		// CONSTANTE: <interface> MAP - <clase> HasMap
+		// CONSTANTE: <Interface> MAP - <Clase> HasMap
 		// objeto 'MAPA_PRODUCTOS' se van poniendo los valores dentro del OBJETO
 		// CONSTANTE.METODO(CLAVE________,VALOR = Objeto de la clase 'Producto' con
 		// todos los valores)
@@ -81,8 +82,9 @@ public class DummyDB {
 	}
 
 	/**
-	 * Devuelve un objeto de tipo "HashMap" con todos los valores (CLAVE,VALOR) de
-	 * esta clase que hemos instanciado con "Productos" y "Familia"
+	 * Devuelve un objeto de tipo "Map" con todos los valores (CLAVE,VALOR) de esta
+	 * clase que hemos instanciado con "Productos" y "Familia" y que se implementa
+	 * con la clase "HashMap"
 	 *
 	 * @return MAPA_PRODUCTOS
 	 */

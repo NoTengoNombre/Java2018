@@ -3,7 +3,7 @@ package com.rvssoft.gestionproductos.backend.familia;
 import java.util.Date;
 
 /**
- * POJO Perfecto
+ * !!!!!!! POJO Perfecto !!!!!!!!!
  * 
  * @see
  * @since 11 sept. 2018 : 22:21:17
@@ -16,14 +16,16 @@ public class Producto {
 	private int codigo;
 	private double precio;
 	private boolean descatalogado;
+
 	// Atributos de Instancia de otras CLASES
 	private String nombre;
 	private Date fechaAlta;
-	// Atributos de tipo ENUM
+
+	// Atributos de tipo ENUM : Mando a distancia para invocar los valores
 	private Familia familia;
 
 	/**
-	 * Constructor 
+	 * Constructor
 	 */
 	public Producto() {
 		this(0, null, null, null, 0);
@@ -158,8 +160,9 @@ public class Producto {
 	 */
 	@Override
 	public String toString() {
-		return "Codigo : " + getCodigo() + " Precio : " + getPrecio() + " Nombre : " + getNombre() + " Fecha : "
-				+ getFechaAlta() + " Familia : " + getFamilia() + " Descatalogado : " + isDescatalogado();
+		return "Codigo : " + getCodigo() + " \n -Precio : " + getPrecio() + " \n -Nombre : " + getNombre()
+				+ " \n -Fecha : " + getFechaAlta() + " \n -Familia : " + getFamilia() + " \n -Descatalogado : "
+				+ isDescatalogado();
 	}
 
 }

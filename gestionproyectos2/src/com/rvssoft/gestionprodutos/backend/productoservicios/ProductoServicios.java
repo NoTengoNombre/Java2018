@@ -8,12 +8,12 @@ import com.rvssoft.gestionproductos.backend.familia.Familia;
 import com.rvssoft.gestionproductos.backend.familia.Producto;
 
 /**
- * Interfaces Basica
  * 
  * @see
  * @since 11 sept. 2018 : 22:22:32
  * @author Android
  *
+ *         !!!!!! Interfaces Basica !!!!!!!!
  */
 public interface ProductoServicios {
 
@@ -30,7 +30,7 @@ public interface ProductoServicios {
 	 * Recibe un valor numerico
 	 * 
 	 * @param codigo
-	 * @return el numero del codigo
+	 * @return lee el numero del codigo de Producto
 	 */
 	public Producto read(int codigo);
 
@@ -38,47 +38,111 @@ public interface ProductoServicios {
 
 	// Obtención de listas
 
+	/**
+	 * 
+	 * @return List<Producto>
+	 */
 	public List<Producto> getAll();
 
+	/**
+	 * Recibe un valor de tipo Enum
+	 * 
+	 * @param Enum familia
+	 * @return List<Producto>
+	 */
 	public List<Producto> getByFamilia(Familia familia);
 
+	/**
+	 * 
+	 * @param familia
+	 * @return
+	 */
+	public List<Producto> getByFamiliaStream(Familia familia);
+
+	/**
+	 * Devuelve una List<Producto> : necesita ArrayList para implementar sus metodos
+	 * 
+	 * @param min
+	 * @param max
+	 * @return List <Producto> entre un rango min y max
+	 */
 	public List<Producto> getByPriceRange(double min, double max);
 
+	/**
+	 * Devuelve una lista<Producto> comprendido entre 2 objetos tipo 'Date'
+	 * 
+	 * @param fecha1
+	 * @param fecha2
+	 * @return List<Producto> entre un rango 'objeto' de tipo Date
+	 */
 	public List<Producto> getBetweenDates(Date fecha1, Date fecha2);
+
+	/**
+	 * Devuelve una lista<Producto> comprendido entre 2 objetos tipo 'Date'
+	 * 
+	 * @param fecha1
+	 * @param fecha2
+	 * @return List<Producto> entre un rango 'objeto' de tipo Date
+	 */
+	public List<Producto> getBetweenDatesMio(Date fecha1, Date fecha2);
+
+	/**
+	 * Devuelve una lista<Producto> comprendido entre 2 objetos tipo 'Date'
+	 * 
+	 * @param fecha1
+	 * @param fecha2
+	 * @return List<Producto> entre un rango 'objeto' de tipo Date
+	 */
+	public List<Producto> getBetweenDatesStream(Date fecha1, Date fecha2);
 
 //	Estadisticas
 
 	/**
-	 * Aunque ponga MAP devuelve un objeto de la clase 'HashMap' porque es la clase
-	 * que lo implementa
+	 * Aunque ponga "Map" - devuelve un objeto de la clase 'HashMap' porque es la
+	 * clase que lo implementa
 	 * 
 	 * @return 'Objeto' de tipo HashMap "String" y "Integer"
 	 */
 	public Map<String, Integer> getNumeroProductosByFamilia();
 
 	/**
-	 * Aunque ponga MAP devuelve un objeto de la clase 'HashMap' porque es la clase
-	 * que lo implementa
+	 * Aunque ponga "Map" - devuelve un objeto de la clase 'HashMap' porque es la
+	 * clase que lo implementa
 	 * 
-	 * @return 'Objeto' de
+	 * @return 'Objeto' de tipo HashMap "String" y "Integer"
+	 */
+	public Map<String, Integer> getNumeroProductosByFamilia2();
+
+	/**
+	 * Aunque ponga "Map" - devuelve un objeto de la clase 'HashMap' porque es la
+	 * clase que lo implementa
+	 * 
+	 * @return devuelve un 'Objeto' de tipo Map<String, Double> que necesita un
+	 *         HashMap para ser implementado
 	 */
 	public Map<String, Double> getPrecioMedioByFamilia();
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public Map<String, Double> getPrecioMedioByFamilia2();
 
 	// Lógica de negocio
 
 	/**
 	 * 
-	 * @param incremento
-	 * @param familia
-	 * @return Precio producto incrementado
+	 * @param      double incremento
+	 * @param Enum familia
+	 * @return int producto incrementado
 	 */
 	public int incrementarPrecioToFamilia(double incremento, Familia familia);
 
 	/**
 	 * 
-	 * @param incremento
-	 * @param productos
-	 * @return Precio producto incrementado
+	 * @param double incremento
+	 * @param List<Producto> productos
+	 * @return int producto incrementado
 	 */
 	public int incrementarPrecioToProductList(double incremento, List<Producto> productos);
 
