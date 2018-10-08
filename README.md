@@ -1,2 +1,0 @@
-# ProyectosEclipse
-Proyectos con Eclipse
