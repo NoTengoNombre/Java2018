@@ -25,6 +25,9 @@ public class LiteralesValorLiteralConstanteLiteral {
   byte literalHexadecimal2 = 0xA;
   long literalLong = 873L;
 
+  System.out.println("Literal Booleano 1 " + literalBoolean1);
+  System.out.println("Literal Booleano 2 " + literalBoolean2);
+
   // Literal reales
   double valorDecimal1 = 13.2d;
   System.out.print("• Valor Decimal : \t" + valorDecimal1 + "\n");
@@ -34,6 +37,12 @@ public class LiteralesValorLiteralConstanteLiteral {
   System.out.print("• Valor Float : \t" + valorFlotante1 + "\n");
   float valorFlotante2 = 2.f;
   System.out.print("• Valor Float : \t" + valorFlotante2 + "\n");
+
+  System.out.println("Literal Decimal " + literalDecimal);
+  System.out.println("Literal Octal" + literalOctal);
+  System.out.println("Literal Hexadecimal " + literalHexadecimal1);
+  System.out.println("Literal Hexadecimal " + literalHexadecimal2);
+  System.out.println("Literal Long " + literalLong);
 
   System.out.println("---------Retorno de carro ---------------");
   System.out.print("a \r");
