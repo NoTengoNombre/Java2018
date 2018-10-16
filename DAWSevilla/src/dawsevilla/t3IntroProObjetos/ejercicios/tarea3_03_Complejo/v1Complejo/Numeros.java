@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dawsevilla.t3IntroProObjetos.ejercicios.numeros;
-
-import dawsevilla.t3IntroProObjetos.ejercicios.Complejo;
+package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_03_Complejo.v1Complejo;
 
 /**
  * @see Ej 2
@@ -22,9 +20,9 @@ public class Numeros {
 
   Complejo c2 = new Complejo();
   c2.cambia_Real(1.1f);
-  c2.cambia_Imag(2.1f); 
+  c2.cambia_Imag(2.1f);
   System.out.printf("Valor Complejo : ", c2.toString());
-  c2.sumarMetodos(c2); 
+  c2.sumarMetodos(c2);
 
  }
 }

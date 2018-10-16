@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dawsevilla.t3IntroProObjetos.ejercicios;
+package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_03_Complejo.v1Complejo;
 
 /**
  * @see Ej2

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_01;
+package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_01_Persona;
 
 /**
  * @see
