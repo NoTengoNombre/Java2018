@@ -1,4 +1,4 @@
-package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_02.v0;
+package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_02_Persona.v0Persona;
 
 import java.io.BufferedReader;
 import java.io.IOException;
