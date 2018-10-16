@@ -6,9 +6,9 @@
 package dawsevilla.t3IntroProObjetos.ejercicios.tarea3_03_Complejo.v0Complejo;
 
 /**
- * @see Complejo
+ * @see Complejo 
  * @since 16-oct-2018
- * @version 1.0
+ * @version 2.0
  * @author Raul Vela Salas
  */
 public class Main {
