@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dawsevilla.t4ManejoFlujoDatos;
+package dawsevilla.t4ManejoFlujoDatos.organizarelcodigo;
 
 /**
  * @see pag3
@@ -11,7 +11,7 @@ package dawsevilla.t4ManejoFlujoDatos;
  * @version 1.0
  * @author Raul Vela Salas
  */
-public class P4OrganizaciónSentencias3 {
+public class ComoOrganizarElCodigo {
 
  public static void main(String[] args) {
 
