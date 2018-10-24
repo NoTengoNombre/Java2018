@@ -1,0 +1,9 @@
+2018-10-23 18:16:15,908 INFO e.Demo [main] starting...
+2018-10-23 18:16:15,911 ERROR e.Demo [main] error message
+2018-10-23 18:16:15,911 INFO e.Demo [main] some info.
+2018-10-23 18:40:17,061 INFO e.Demo [main] starting...
+2018-10-23 18:40:17,064 ERROR e.Demo [main] error message
+2018-10-23 18:40:17,065 INFO e.Demo [main] some info.
+2018-10-24 09:42:26,632 INFO e.Demo [main] starting...
+2018-10-24 09:42:26,635 ERROR e.Demo [main] error message
+2018-10-24 09:42:26,635 INFO e.Demo [main] some info.
