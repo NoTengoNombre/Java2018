@@ -10,9 +10,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @see @since 16-oct-2018
+ * @since 16-oct-2018
  * @version 1.0
  * @author Raul Vela Salas
+ * @see "Diseño de Menus : Uso operador Switch"
+ * @see
+ * <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html">Switch</a>
+ * @see void#introDatos() introDatos
  */
 public class Operaciones {
 
