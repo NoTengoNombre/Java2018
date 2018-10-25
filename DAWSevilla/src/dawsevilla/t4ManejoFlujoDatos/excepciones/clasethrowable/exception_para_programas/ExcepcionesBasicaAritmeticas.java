@@ -5,7 +5,6 @@
  */
 package dawsevilla.t4ManejoFlujoDatos.excepciones.clasethrowable.exception_para_programas;
 
-import dawsevilla.t3IntroProObjetos.ejercicios.tarea3_03_Complejo.v0Complejo.Teclado;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

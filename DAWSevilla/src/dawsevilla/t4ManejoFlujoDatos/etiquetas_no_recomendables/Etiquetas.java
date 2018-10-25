@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dawsevilla.t4ManejoFlujoDatos.etiquetas;
+package dawsevilla.t4ManejoFlujoDatos.etiquetas_no_recomendables;
 
 /**
  * @see -
