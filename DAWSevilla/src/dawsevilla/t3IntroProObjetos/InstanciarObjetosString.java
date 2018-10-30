@@ -13,8 +13,8 @@ package dawsevilla.t3IntroProObjetos;
 public class InstanciarObjetosString {
 
  public static void main(String[] args) {
-  
+
   String mensaje = new String();
-  
+
  }
 }
