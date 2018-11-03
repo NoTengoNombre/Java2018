@@ -12,7 +12,6 @@ import java.awt.Event;
 import java.awt.Frame;
 import java.awt.Label;
 import java.awt.Panel;
-import sun.java2d.d3d.D3DRenderQueue;
 
 /**
  * @see http://dis.um.es/~bmoros/Tutorial/parte9/cap9-3.html
