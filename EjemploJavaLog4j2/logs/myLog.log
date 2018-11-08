@@ -7,3 +7,6 @@
 2018-10-24 09:42:26,632 INFO e.Demo [main] starting...
 2018-10-24 09:42:26,635 ERROR e.Demo [main] error message
 2018-10-24 09:42:26,635 INFO e.Demo [main] some info.
+2018-11-08 10:25:27,963 INFO e.Demo [main] starting...
+2018-11-08 10:25:27,963 ERROR e.Demo [main] error message
+2018-11-08 10:25:27,963 INFO e.Demo [main] some info.
