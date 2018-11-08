@@ -12,7 +12,7 @@ import org.junit.Test;
  * @author Robot
  */
 public class JUnitCalculadoraTest {
- 
+
  public JUnitCalculadoraTest() {
  }
 
@@ -27,5 +27,5 @@ public class JUnitCalculadoraTest {
   // TODO review the generated test code and remove the default call to fail.
 //  fail("The test case is a prototype.");
  }
- 
+
 }
