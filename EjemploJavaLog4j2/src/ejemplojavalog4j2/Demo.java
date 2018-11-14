@@ -11,6 +11,8 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * @see
+ * https://web.archive.org/web/20070125145625/http://logging.apache.org/log4j/docs/api/index.html
+ * https://es.wikipedia.org/wiki/Log4j
  * https://stackoverflow.com/questions/43094299/setting-up-log4j2-in-netbeans-basic-configuration
  * @since 23-oct-2018
  * @version 1.0

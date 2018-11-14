@@ -24,6 +24,10 @@ public class T4Leer100numeros {
  private static BufferedReader br;
  private static int contador;
 
+ /**
+  *
+  * @return numero de veces hecha una acción
+  */
  public static int getContador() {
   return contador++;
  }
@@ -104,7 +108,6 @@ public class T4Leer100numeros {
     getContador();
    }
   } while ((x <= 0) || (x > 100));
-  System.out.println("Numero de intentos : " + contador);
   System.out.println("Valor introducido : " + x);
   return x;
  }
