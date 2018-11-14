@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package junitcalculadoraassert;
+package mriadaxjava2;
 
 /**
  *
  * @author MyDevelop
  */
-public class JUnitCalculadoraAssert {
+public class MriadaxJava2 {
 
  /**
   * @param args the command line arguments
@@ -17,5 +17,5 @@ public class JUnitCalculadoraAssert {
  public static void main(String[] args) {
   // TODO code application logic here
  }
-
+ 
 }

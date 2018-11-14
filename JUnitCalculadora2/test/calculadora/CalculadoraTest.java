@@ -68,6 +68,8 @@ public class CalculadoraTest {
 //  // Con el metodo ponemos el valor esperado y el valor devuelto por el metodo
 //  assertEquals(valorEsperado, resultado);
 // }
+// 
+// 
 // @Test
 // public void testResta() {
 //  int resultado = JUnitCalculadora2.resta(3, 2);
@@ -75,12 +77,15 @@ public class CalculadoraTest {
 //  // Con el metodo ponemos el valor que esperamos y el valor devuelto por el metodo que estamos probando
 //  assertEquals(valorEsperado, resultado);
 // }
+// 
 // @BeforeClass
 // public static void setUpClass() {
 // }
+// 
 // @AfterClass
 // public static void tearDownClass() {
 // }
+// 
  /**
   * The methods must be annotated with annotation
   *
@@ -112,9 +117,9 @@ public class CalculadoraTest {
  @Test // marca el Test como una prueba
  public void testSumParametrizados() {
   System.out.println("sum()");
-  int resul = calc.add(3, 2);
-  int esper = 5;
-  assertEquals(esper, resul);
+  int resultado = calc.add(3, 2);
+  int resultadoEsperado = 5;
+  assertEquals(resultadoEsperado, resultado);
  }
 
  /**
@@ -142,8 +147,9 @@ public class CalculadoraTest {
 
  /**
   * Crear una prueba que permita comprobar si se lanza la excepcion
-  * correctamente cuando se ejecute el metodo con un error Siempre va a fallar
-  * en el caso que no se lance una expecion que le indiqueis
+  * correctamente cuando se ejecute el metodo con un error
+  *
+  * Siempre va a fallar en el caso que no se lance una expecion que le indiques
   */
  @Test(expected = ArithmeticException.class)
  public void testDivPorCero() {
@@ -158,6 +164,7 @@ public class CalculadoraTest {
 // public void testAlgoritmoOptimo() {
 //  calc.operacionOptimaMuyLarga();
 // }
+// 
  /**
   * Si el metodo lanzado es un bucle infinito aparece un error
   */
@@ -165,4 +172,5 @@ public class CalculadoraTest {
 // public void testAlgoritmoOptimoAntiBucleInfinito() {
 //  calc.operacionOptimaMuyLargaAntiBuclesInfinitos();
 // }
+// 
 }
