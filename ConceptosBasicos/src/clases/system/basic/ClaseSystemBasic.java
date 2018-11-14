@@ -26,7 +26,7 @@ public class ClaseSystemBasic {
   System.out.println(System.currentTimeMillis());
 //  1541706319540
 
-  File fichero = new File("archivo\\test.txt");
+  File fichero = new File("test.txt");
 
   long ms = System.currentTimeMillis();
   boolean cambio = fichero.setLastModified(ms);
