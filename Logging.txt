@@ -1,0 +1,8 @@
+nov 18, 2018 7:16:36 PM apis.basicas.logger.UseLogger doSomeThingAndLog
+GRAVE: Info Log
+nov 18, 2018 7:16:36 PM apis.basicas.logger.UseLogger doSomeThingAndLog
+GRAVE: • Info Log
+nov 18, 2018 7:16:36 PM apis.basicas.logger.UseLogger doSomeThingAndLog
+ADVERTENCIA: • Info Log
+nov 18, 2018 7:16:36 PM apis.basicas.logger.UseLogger doSomeThingAndLog
+INFORMACIÓN: • Info Log
