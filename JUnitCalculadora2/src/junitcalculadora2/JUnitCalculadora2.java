@@ -11,6 +11,7 @@ package junitcalculadora2;
  */
 public class JUnitCalculadora2 {
 
+ 
  public static int suma(int a, int b) {
   return a + b;
  }
