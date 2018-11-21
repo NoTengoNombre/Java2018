@@ -13,7 +13,7 @@ import java.util.Random;
  * @version 1.0
  * @author Raul Vela Salas
  */
-public class T1UsoIfAnidados2Ejemplo {
+public class T1UsoSentenciaIfAnidados2Ejemplo {
 
  private static Coche marcha = new Coche();
 

@@ -13,7 +13,7 @@ import java.util.Random;
  * @version 1.0
  * @author Raul Vela Salas
  */
-public class T1UsoIF2 {
+public class T1UsoSentenciaIF2 {
 
  public static void main(String[] args) {
 
