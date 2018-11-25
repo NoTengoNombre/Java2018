@@ -16,16 +16,20 @@ import java.util.Scanner;
 public class T1Ejercicio2LetraDNI {
 
  public static void main(String[] args) {
-  new LetraDNI().getComprobarNumeros();
-
+  LetraDNI ldni = new LetraDNI();
+  ldni.setNumeroDNI();
  }
 }
 
 class LetraDNI {
 
  private int numero;
- private static final Scanner TECLADO = new Scanner(System.in);
- private char letras[]
+ private int numeroTotal;
+ private static int numeroDNI;
+ private static int indice;
+ private final int[] NUMALMACENADOS = new int[8];
+
+ private char[] letras
          = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P',
           'D', 'X', 'B', 'N', 'J', 'Z', 'S',
           'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
@@ -34,21 +38,78 @@ class LetraDNI {
   return numero;
  }
 
+ public int getNumeroTotal() {
+  return numeroTotal;
+ }
+
+ public int getNumeroDNI() {
+  return numeroDNI;
+ }
+
+ public int getIndice() {
+  return (++indice);
+ }
+
+ public int[] getArrayNumeros() {
+  return NUMALMACENADOS;
+ }
+
+ public char setLetra(int num) {
+  char letra = letras[num];
+  return letra;
+ }
+
  public int getNumero() {
-  System.out.println("Introduce 8 numeros");
-  numero = TECLADO.nextInt();
+  Scanner teclado = new Scanner(System.in);
+  System.out.println("Introduce el " + (getIndice()) + "º numero");
+  numero = teclado.nextInt();
+  if ((numero <= 0) || (numero > 9)) {
+   do {
+    System.out.println("Numero " + numero + " no es valido - Introduce otro numero entre 1 y 9");
+    numero = teclado.nextInt();
+   } while ((numero <= 0) || (numero > 9));
+  }
+  System.out.println("Numero Introducido : " + numero);
   return numero;
  }
 
- public int getComprobarNumeros() {
-  int longitudNumero = getNumero();
-  do {
-   if (longitudNumero != 8) {
-    System.out.println("Fuera del rango");
-    longitudNumero = getNumero();
-   }
-  } while (longitudNumero >= 9 || longitudNumero <= 7);
-  return 0;
+ public int[] getSumaNumeros() {
+  for (int i = 0; i < NUMALMACENADOS.length; i++) {
+   NUMALMACENADOS[i] = getNumero();
+  }
+  return NUMALMACENADOS;
+ }
+
+ public String getNumeroToString() {
+  String almacenaCadena = "";
+  getSumaNumeros();
+  int[] numeros = new int[getArrayNumeros().length];
+  String[] cadena = new String[numeros.length];
+
+  for (int i = 0; i < getArrayNumeros().length; i++) {
+   cadena[i] = String.valueOf(getArrayNumeros()[i]);
+  }
+  for (String valor : cadena) {
+   almacenaCadena += valor;
+  }
+  return almacenaCadena;
+ }
+
+ public int getCadenaNumero() {
+  String numeroToString = getNumeroToString();
+  return Integer.parseInt(numeroToString);
+ }
+
+ public int getValorDNI() {
+  int resultado;
+  int totalNum = getCadenaNumero();
+  System.out.println("Valor total : " + totalNum);
+  resultado = (totalNum % 23);
+  return resultado;
+ }
+
+ public void setNumeroDNI() {
+  System.out.println("Letra : " + setLetra(getValorDNI()));
  }
 
 }

@@ -3,32 +3,47 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package t3.basico.funcionesmiembro;
+package t2.basico.funciones.miembro.repaso;
 
 /**
- * @see -
- * @since 13-nov-2018
+ * @see p20
+ * @since 22-nov-2018
  * @version 1.0
  * @author Raul Vela Salas
  */
-public class Clase05 {
+public class Clase05R {
 
- private static int numPersonas;
+ private static int numPersonas; // variable de clase
+
  final public static int EDAD_MAX = 65;
-
  private int numero;
  private String nombre;
 
- public Clase05() {
+ /**
+  * Constructor inicializador basico
+  */
+ public Clase05R() {
   this.numero = EDAD_MAX;
   this.nombre = "anonimo";
  }
 
- public Clase05(int numero, String nombre) {
+ /**
+  * Constructor inicializador
+  *
+  * @param numero
+  * @param nombre
+  */
+ public Clase05R(int numero, String nombre) {
   this.numero = (numero > EDAD_MAX) ? EDAD_MAX : numero;
   this.nombre = nombre;
  }
 
+ /**
+  * Cambia la edad de los ATRIBUTOS de un objeto
+  *
+  * @param nombre
+  * @param numero
+  */
  public void modificaDatos(String nombre, int numero) {
   this.numero = (numero > EDAD_MAX) ? EDAD_MAX : numero;
   this.nombre = nombre;

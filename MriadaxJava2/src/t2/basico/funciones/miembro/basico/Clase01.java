@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package t3.basico.funcionesmiembro;
+package t2.basico.funciones.miembro.basico;
 
 import java.util.Scanner;
 
