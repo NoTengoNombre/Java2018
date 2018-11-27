@@ -24,9 +24,14 @@ public class Persona {
  private byte edad;
  private char sexo;
  private boolean bCasado;
+ private static int numero;
 
  public Persona() {
-  this("Anonimo", "DNI sin Identificar", (byte) 0, 'X', false);
+  this("Anonimo : " + (numero++), "DNI sin Identificar", (byte) 0, 'X', false);
+ }
+
+ public Persona(Persona person) {
+  this(person.nombre, person.DNI, person.edad, person.sexo, person.bCasado);
  }
 
  public Persona(String nombre, String DNI, byte edad, char sexo, boolean bCasado) {
@@ -35,10 +40,6 @@ public class Persona {
   this.edad = edad;
   this.sexo = sexo;
   this.bCasado = bCasado;
- }
-
- public Persona(Persona person) {
-  this(person.nombre, person.DNI, person.edad, person.sexo, person.bCasado);
  }
 
  public String getDNI() {
@@ -79,6 +80,10 @@ public class Persona {
 
  public void setbCasado(boolean bCasado) {
   this.bCasado = bCasado;
+ }
+
+ public int getNumero() {
+  return ++numero;
  }
 
  public void pintar() {

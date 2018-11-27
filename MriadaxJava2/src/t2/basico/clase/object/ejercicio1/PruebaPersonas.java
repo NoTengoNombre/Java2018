@@ -49,7 +49,7 @@ public class PruebaPersonas {
   for (Empleado empleado : empleados) {
 // Cada empleado muestra sus datos formateados 
 // porque tiene implementado el metodo toString
-   System.out.println("♦ Empleados : " + empleado);
+   System.out.println("♦ Empleados : [Nombre : " + empleado.getNombre() + "][Edad : " + empleado.getEdad() + "]");
   }
 
  }
