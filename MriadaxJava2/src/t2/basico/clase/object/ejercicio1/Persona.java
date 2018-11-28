@@ -26,8 +26,12 @@ public class Persona {
  private boolean bCasado;
  private static int numero;
 
+// public Persona() {
+//  this("Anonimo : " + (numero++), "DNI sin Identificar", (byte) 0, 'X', false);
+// }
+// 
  public Persona() {
-  this("Anonimo : " + (numero++), "DNI sin Identificar", (byte) 0, 'X', false);
+  this("Anonimo", "DNI sin Identificar", (byte) 0, 'X', false);
  }
 
  public Persona(Persona person) {
@@ -97,20 +101,6 @@ public class Persona {
           + " Casado " + ((isbCasado() == false) ? "Si" : "No"));
  }
 
-// @Override
-// public int hashCode() {
-//  return super.hashCode(); //To change body of generated methods, choose Tools | Templates.
-// }
-// 
- @Override
- public int hashCode() {
-  final int prime = 31;
-  int result = 1;
-  result = (prime * result) + ((DNI == null) ? 0 : DNI.hashCode());
-  result = (prime * result) + edad;
-  return result;
- }
-
  @Override
  public boolean equals(Object obj) {
   if (this == obj) {
@@ -140,6 +130,20 @@ public class Persona {
    return false;
   }
   return true;
+ }
+
+ // @Override
+// public int hashCode() {
+//  return super.hashCode(); //To change body of generated methods, choose Tools | Templates.
+// }
+// 
+ @Override
+ public int hashCode() {
+  final int prime = 31;
+  int result = 1;
+  result = (prime * result) + ((DNI == null) ? 0 : DNI.hashCode());
+  result = (prime * result) + edad;
+  return result;
  }
 
  @Override

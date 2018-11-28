@@ -118,6 +118,16 @@ public class Empleado extends Persona {
  }
 
  @Override
+ public boolean equals(Object obj) {
+  return super.equals(obj); //To change body of generated methods, choose Tools | Templates.
+ }
+
+ @Override
+ public int hashCode() {
+  return super.hashCode(); //To change body of generated methods, choose Tools | Templates.
+ }
+
+ @Override
  public void pintar() {
   System.out.println(
           "♠ Clase : " + getClass()
