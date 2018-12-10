@@ -45,7 +45,7 @@ class UsarRecursosTryCatch {
    }
   } catch (Exception e) {
    System.err.println("Error : " + e.getMessage());
-  } 
+  }
  }
 
  public static void main(String[] args) throws IOException {
