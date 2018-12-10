@@ -18,7 +18,7 @@ import java.util.Queue;
  * @version 1.0
  * @author Raul Vela Salas
  */
-public class ColaPriorityAArrayList {
+public class T3p14PriorityQueueAArrayList {
 
  /**
   * Ordenar los elementos del ArrayList mediante la clase PriorityQueue
