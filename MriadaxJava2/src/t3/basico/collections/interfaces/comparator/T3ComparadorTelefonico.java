@@ -8,6 +8,10 @@ package t3.basico.collections.interfaces.comparator;
 import java.util.Comparator;
 
 /**
+ * Clase que implementa la interface Comparator<T3Persona> y personaliza el
+ * metodo para comprobar si 2 objetos son iguales
+ *
+ *
  * @see -
  * @since 11-dic-2018
  * @version 1.0
