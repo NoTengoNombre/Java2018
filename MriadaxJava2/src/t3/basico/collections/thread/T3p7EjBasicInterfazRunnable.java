@@ -71,8 +71,8 @@ class InterfazRunnable implements Runnable {
   ClaseThread ct2 = new ClaseThread(aleatorio.nextInt(6) + 1);
 
   InterfazRunnable ir1 = new InterfazRunnable(aleatorio.nextInt(4) + 1);
-
   InterfazRunnable ir2 = new InterfazRunnable(aleatorio.nextInt(7) + 1);
+  
   ct1.start();
   ct2.start();
 
