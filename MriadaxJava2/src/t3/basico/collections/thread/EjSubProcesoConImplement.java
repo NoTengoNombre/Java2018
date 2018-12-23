@@ -50,24 +50,49 @@ public class EjSubProcesoConImplement implements Runnable {
  /**
   * Metodo que crea un 'subproceso secundario' para declarar variables y
   * ejecutar metodos , clases que queremos usar en un thread aparte
+  *
+  * Esta redifiniendo el metodo run() - Punto de inicio del SUBPROCESO
+  *
+  * <p>
+  * Permite
+  * </p>
+  *
+  * <ol>
+  * <li>Invocar Clases</li>
+  * <li>Invocar Declarar variables</li>
+  * <li>Invocar Metodos</li>
+  * </ol>
+  *
+  * Se crea un nuevo subproceso aparte del principal
+  *
   */
  @Override
  public void run() {
 //Aquí definimos las variables e invocamos las Clases , Metodos 
 //que vamos a usar en el Subproceso
   System.out.println("Inicializamos el nuevo 'thread' a parte del Subproceso principal");
-
+  int i = 1;
+  while (true) {
+   System.out.println("Run del Thread " + getClass().getSimpleName() + " Iteracion " + i++);
+   if (i > milisegundos) {
+    break;
+   }
+  }
  }
 
  public static void main(String[] args) {
 
+//Con varios objetos
   EjSubProcesoConImplement sp1 = new EjSubProcesoConImplement("Subproceso #1", 1000);
   Thread thread = new Thread(sp1);
   thread.start();
 
+//Instanciando directamente un objeto dentro de la clase Thread
   Thread thread2 = new Thread(new EjSubProcesoConImplement("Subproceso #2", 1000));
   thread2.start();
 
+//Crea una Instancia directamente del objeto 'new Thread' 
+//del objeto 'EjSubProcesoConImplement' para invocar al metodo start()
   (new Thread(new EjSubProcesoConImplement())).start();
 
  }
