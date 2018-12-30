@@ -34,13 +34,33 @@ public class T3p_12ThreadMetodoisAlive {
  }
 }
 
+/**
+ *
+ * @author MyDevelop
+ */
 class MiThread extends Thread {
 
+ /**
+  * Almacena el valor cuando comenzo a ejecutarse el Subproceso
+  */
  private long inicio;
 
+ /**
+  * Constructor : Inicializa el valor de 'inicio'
+  *
+  * @param cadena "para indicar el subproceso que esta trabajando"
+  */
  public MiThread(String cadena) {
   super(cadena);
   inicio = System.currentTimeMillis();
+ }
+
+ /**
+  *
+  * @return Devuelve el valor de inicio
+  */
+ public long getInicio() {
+  return inicio;
  }
 
 }

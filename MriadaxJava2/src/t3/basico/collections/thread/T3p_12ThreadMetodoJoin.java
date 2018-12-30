@@ -14,6 +14,17 @@ package t3.basico.collections.thread;
  */
 public class T3p_12ThreadMetodoJoin {
 
+ /**
+  * El Subproceso main() espera a que termine los demas Subproceso ya que estan
+  * unidos a él por el metodo join();
+  *
+  * Hasta que no termine los subprocesos de los objetos 'mt1 , mt2 , mt3' no
+  * continua con el subprocesos del metodo 'main'
+  *
+  * 'main' esta esperando a los demas subprocesos
+  *
+  * @param args
+  */
  public static void main(String[] args) {
 
   System.out.println("Comienzo funcion main");
