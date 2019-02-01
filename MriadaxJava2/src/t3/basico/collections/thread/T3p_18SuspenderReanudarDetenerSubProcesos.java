@@ -59,14 +59,6 @@ class MiThreadSRD implements Runnable {
  }
 
  /**
-  * Resume : Continuar / Reanudar
-  */
- synchronized void resume() {
-  suspendido = false;
-  notify(); // saca 'waiting' a unos de los subprocesos esten en este estado y lo pasa a RUNNABLE
- }
-
- /**
   * Metodo de Instancia : 'Detiene' la ejecución de un subproceso hasta que
   * recibe una 'notify'
   */
@@ -84,6 +76,14 @@ class MiThreadSRD implements Runnable {
  }
 
  /**
+  * Resume : Continuar / Reanudar
+  */
+ synchronized void resume() {
+  suspendido = false;
+  notify(); // saca 'waiting' a unos de los subprocesos esten en este estado y lo pasa a RUNNABLE
+ }
+
+ /**
   * Metodo heredado de 'Runnable' e implemando para que se ejecute un bucle 100
   * veces y en cada iteracion donde el valor valga %10 = 0 se pare el hilo de
   * ejecución de ese subproceso
@@ -92,7 +92,7 @@ class MiThreadSRD implements Runnable {
  public void run() {
   System.out.println(thread.getName() + " ARRANCANDO ");
   try {
-   for (int i = 1; i < 100; i++) {
+   for (int i = 1; i < 1000; i++) {
     System.out.print("\u001B[36m" + i + " ");
     if ((i % 10) == 0) {
      System.out.println("\ni : " + i);

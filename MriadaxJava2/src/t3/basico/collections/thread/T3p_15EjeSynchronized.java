@@ -32,6 +32,7 @@ public class T3p_15EjeSynchronized {
   MiThread3 mt1 = new MiThread3("Subproceso #1");
   MiThread3 mt2 = new MiThread3("Subproceso #2");
   MiThread3 mt3 = new MiThread3("Subproceso #3");
+
   System.out.println("ESTADO DE " + mt1.getName() + " ===> " + mt1.getState());
   System.out.println("COMIENZO " + System.currentTimeMillis());
   System.out.println("ESTADO DE " + mt2.getName() + " ===> " + mt2.getState());
@@ -121,7 +122,7 @@ class MiThreadSum implements Runnable { //interface
  public MiThreadSum(String nombre, int numeros[]) {
   thread = new Thread(this, nombre); // 1º"Threadgroup" instancia un objeto 'thread' 2º"nombre"
   this.numeros = numeros; // el array pasado como argumento se almacena en la clase MiThreadSum como ATRIBUTO
-  thread.start(); // objet
+  thread.start(); // inicia la ejecución de un Subproceso invocando a su metodo run();
  }
 
  /**
@@ -146,9 +147,9 @@ class MiThreadSum implements Runnable { //interface
   */
  @Override
  public void run() {
-  int suma;
+  int suma = 0;
   System.out.println(thread.getName() + " EMPEZANDO");
-  synchronized (numeros) {
+  synchronized (numeros) { // Sincronizamos esta parte del bloque de codigo sobre todo para APIS de terceros
    suma = sa.sumarArray(numeros);
   }
   System.out.println("La suma en " + thread.getName() + " es " + suma);
